@@ -141,13 +141,14 @@ func testAttachWelcome(t *testing.T, geth *testgeth, endpoint, apis string) {
 
 	// Verify the actual welcome message to the required template
 	attach.Expect(`
-Welcome to the Geth JavaScript console!
+Bienvenido a Scol Consola JavaScript!
 
 instance: Geth/v{{gethver}}/{{goos}}-{{goarch}}/{{gover}}
 coinbase: {{etherbase}}
 at block: 0 ({{niltime}}){{if ipc}}
  datadir: {{datadir}}{{end}}
  modules: {{apis}}
+Segunda Capa Scolcoin.com
 
 To exit, press ctrl-d
 > {{.InputLine "exit" }}
