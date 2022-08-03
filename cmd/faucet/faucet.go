@@ -278,7 +278,7 @@ func newFaucet(genesis *core.Genesis, port int, enodes []*discv5.Node, network u
 		datadir = filepath.Join(os.Getenv("HOME"), ".faucet")
 	}
 	stack, err := node.New(&node.Config{
-		Name:    "cetd",
+		Name:    "scol",
 		Version: params.VersionWithCommit(gitCommit, gitDate),
 		DataDir: datadir,
 		P2P: p2p.Config{
@@ -307,7 +307,7 @@ func newFaucet(genesis *core.Genesis, port int, enodes []*discv5.Node, network u
 	//utils.SetDNSDiscoveryDefaults(&cfg, genesis.ToBlock(nil).Hash())
 	lesBackend, err := les.New(stack, &cfg)
 	if err != nil {
-		return nil, fmt.Errorf("Failed to register the CSC service: %w", err)
+		return nil, fmt.Errorf("Failed to register the SCOL service: %w", err)
 	}
 
 	// Assemble the ethstats monitoring and reporting service'
