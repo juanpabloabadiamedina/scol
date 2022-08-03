@@ -67,13 +67,14 @@ func TestConsoleWelcome(t *testing.T) {
 
 	// Verify the actual welcome message to the required template
 	geth.Expect(`
-Welcome to the Geth JavaScript console!
+Bienvenidos Scol Consola JavaScript!
 
 instance: Geth/v{{gethver}}/{{goos}}-{{goarch}}/{{gover}}
 coinbase: {{.Etherbase}}
 at block: 0 ({{niltime}})
  datadir: {{.Datadir}}
  modules: {{apis}}
+Segunda Capa Scolcoin.com
 
 To exit, press ctrl-d
 > {{.InputLine "exit"}}
