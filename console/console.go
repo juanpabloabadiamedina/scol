@@ -299,7 +299,7 @@ func (c *Console) AutoCompleteInput(line string, pos int) (string, []string, str
 // Welcome show summary of current Geth instance and some metadata about the
 // console's available modules.
 func (c *Console) Welcome() {
-	message := "Bienvenidos a Scol Consola JavaScript!\n\n"
+	message := "Bienvenidos a Scol Consola JavaScript!\nSegunda Capa Scolcoin Web scolcoin.com\n\n"
 
 	// Print some generic Geth metadata
 	if res, err := c.jsre.Run(`
