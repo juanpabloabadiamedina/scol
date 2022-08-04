@@ -74,7 +74,6 @@ coinbase: {{.Etherbase}}
 at block: 0 ({{niltime}})
  datadir: {{.Datadir}}
  modules: {{apis}}
-Segunda Capa Scolcoin.com
 
 To exit, press ctrl-d
 > {{.InputLine "exit"}}
